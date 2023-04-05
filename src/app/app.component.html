@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+   <span class="logo">HR Dashboard</span>
+   <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+ <span class="extra"></span>
+   <mat-icon>person</mat-icon>
+   <span>Naresh</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-wrapper">
+    <mat-sidenav mode="side" opened #nav>
+      <a [routerLink]="['listcandidates']" color="primary">
+         <button mat-button>
+            <span>List Candidates</span>
+         </button>
+      </a>
+      <a [routerLink]="['home']" color="primary">
+         <button mat-button>
+            <span>Add New Candidate</span>
+         </button>
+      </a>
+   
+      <a [routerLink]="['profile']" color="primary">
+         <button mat-button>
+            <mat-icon>user</mat-icon>
+            <span>Profile</span>
+         </button>
+      </a>
+   
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+     
+
+
+   </mat-sidenav-content>
+  </mat-sidenav-container>

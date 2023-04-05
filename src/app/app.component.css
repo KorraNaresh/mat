@@ -1,0 +1,37 @@
+.extra{
+    flex:1 1 auto;
+}
+.logo{
+    margin-left: 20px;
+}
+.sidenav-wrapper{
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+}
+mat-sidenav{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+mat-sidenav-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+mat-sidenav a{
+  padding-top: 20px;
+}
+button span{
+  background-color: #ddd;
+  padding: 8px;
+  width: 100%;
+}
